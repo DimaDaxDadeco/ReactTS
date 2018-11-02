@@ -17,6 +17,8 @@ export const action = createAction<IAction>('create action', () => ({
 
 function* actionSaga(response: IActionSaga) {
   const state = yield select();
+
+  return state;
 }
 
 export const watchAction = takeEvery(action.getType(), actionSaga);

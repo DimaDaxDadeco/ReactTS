@@ -2,14 +2,11 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 
 import { store } from '../../redux/store/store';
+import { Routes } from '../../routes/routes';
 
-interface IProps {
-  children: React.ReactNode;
-}
-
-const App = ({ children }: IProps) => (
+const App = () => (
   <Provider store={store}>
-    <div>{children}</div>
+    <Routes />
   </Provider>
 );
 

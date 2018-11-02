@@ -14,13 +14,13 @@ class Test extends React.Component<IProps> {
   }
 
   render() {
-    return <Link to="/">Hello 1</Link>;
+    return <Link to="/test">Hello 2</Link>;
   }
 }
 
-const TestContainer = connect(
+const TestContainer2 = connect(
   null,
   { action },
 )(Test);
 
-export { TestContainer };
+export { TestContainer2 };
