@@ -1,34 +1,16 @@
 import * as React from 'react';
-import * as s from './app.less';
+import { Provider } from 'react-redux';
+
+import { store } from '../../redux/store/store';
 
 interface IProps {
-  p1: string;
+  children: React.ReactNode;
 }
 
-interface IState {
-  st1: number;
-  st2: number;
-}
-
-class App extends React.Component<IProps, IState> {
-  state = {
-    st1: 1,
-    st2: 2,
-  };
-
-  method = (pram: number) => {
-    this.setState({
-      st1: pram,
-    });
-  }
-
-  render() {
-    return (
-      <div className={s.container}>
-        {this.props.children} {this.props.p1}
-      </div>
-    );
-  }
-}
+const App = ({ children }: IProps) => (
+  <Provider store={store}>
+    <div>{children}</div>
+  </Provider>
+);
 
 export { App };
