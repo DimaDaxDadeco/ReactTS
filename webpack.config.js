@@ -15,6 +15,7 @@ const postCssLoader = {
     ]
   }
 };
+
 const cssLoader = {
   loader: 'css-loader',
   options: {

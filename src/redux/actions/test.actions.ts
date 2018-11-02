@@ -1,7 +1,7 @@
 import { createAction } from 'redux-act';
 import { select, takeEvery } from 'redux-saga/effects';
 
-import { ISaga } from './common.d';
+import { ISaga } from './common.types';
 
 interface IAction {
   data: number;

@@ -8,7 +8,7 @@ interface IProps {
   action: () => void;
 }
 
-class Test extends React.Component<IProps> {
+export class Test extends React.Component<IProps> {
   componentDidMount() {
     this.props.action();
   }

@@ -12,5 +12,8 @@
   "include": [
     "./src/**/*",
     "./src/types/externals/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
