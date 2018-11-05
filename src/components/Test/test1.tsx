@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { action } from '../../redux/actions/test.actions';
+import * as s from './test1.less';
 
 interface IProps {
   action: () => void;
@@ -14,7 +15,12 @@ export class Test extends React.Component<IProps> {
   }
 
   render() {
-    return <Link to="/">Hello 1</Link>;
+    return (
+      <div className={s.link}>
+        Text
+        <Link to="/">Hello 1</Link>
+      </div>
+    );
   }
 }
 
