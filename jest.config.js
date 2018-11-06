@@ -13,5 +13,8 @@ module.exports = {
   },
   "testMatch": [
     "**/tests/*.test.(ts|tsx|js)"
-  ]
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less)$": "<rootDir>/src/tests/styleMock.js"
+  }
 };
